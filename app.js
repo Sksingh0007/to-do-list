@@ -44,3 +44,4 @@ function addToDo(){
     //Clear the input field
     taskInput.value = '';
 }
+console.log("dhf");
