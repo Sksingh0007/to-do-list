@@ -71,4 +71,6 @@ img {
   float: right;
   font-size: 16px;
   cursor: pointer;
+  /* padding: 5px; */
+  margin-right: 5px;
 }

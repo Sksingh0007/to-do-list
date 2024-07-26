@@ -36,8 +36,21 @@ function addToDo(){
         toDoList.removeChild(list);
     });
 
+    //Adding edit button
+    const editButton = document.createElement('a');
+    editButton.classList.add('edit');
+    editButton.textContent = 'Edit';
+
+    editButton.addEventListener('click', function(){
+        const edited = prompt("Please enter new edited task ");
+        edited.textContent = list.textContent;
+        if(edited !== null && edited.trim() !== ""){
+            list.firstChild.nodeValue = edited;
+        }
+    });
 
     //Append child
+    list.appendChild(editButton);
     list.appendChild(deleteButton);
     toDoList.appendChild(list);
     
